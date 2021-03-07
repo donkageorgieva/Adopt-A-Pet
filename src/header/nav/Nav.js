@@ -1,18 +1,27 @@
 import React from 'react';
-
+import styles from './Nav.module.css'
 
 
 const nav = () => {
     return (
+      
+       
         <nav>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>Adopt</a></li>
-                <li><a>Donate</a></li>
-                <li><a>About</a></li>
-                <li><a>Contact</a></li>
+             <div className={styles.burger_menu}>
+               <div className={styles.burger__bar}></div>
+               <div className={styles.burger__bar}></div>
+               <div className={styles.burger__bar}></div>
+
+        </div>
+            <ul className={styles.menu}>
+                
+                <li><a href="#">Adopt</a></li>
+                <li><a href="#"> Donate</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+       
     )
 
 }

@@ -6,6 +6,7 @@ const adoptInputs = (props) => {
     <a href='#'>Dogs</a>
     <a href='#'> Cats</a>
     <a href='#'>Other Pets</a>
+    
     <button>Search</button>
 </div>
     )

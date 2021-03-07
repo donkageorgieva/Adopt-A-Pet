@@ -5,6 +5,7 @@ import AdoptInputs from './adoptInputs/AdoptInputs'
 const header = (props) => {
     return (
         <header>
+            
 <Nav />
 <AdoptInputs />
         </header>
