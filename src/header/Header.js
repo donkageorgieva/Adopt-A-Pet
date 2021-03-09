@@ -1,13 +1,28 @@
 import React from 'react';
-import Nav from './nav/Nav'
-import AdoptInputs from './adoptInputs/AdoptInputs'
+
+import AdoptOptions from './AdoptOptions/AdoptOptions';
+import styles from './Header.module.css';
 
 const header = (props) => {
     return (
         <header>
-            
-<Nav />
-<AdoptInputs />
+              <nav>
+             <div className={styles.burger_menu}>
+               <div className={styles.burger__bar}></div>
+               <div className={styles.burger__bar}></div>
+               <div className={styles.burger__bar}></div>
+
+        </div>
+            <ul className={styles.menu}>
+                
+                <li><a href="#">Adopt</a></li>
+                <li><a href="#"> Donate</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+<AdoptOptions />
         </header>
     )
 }

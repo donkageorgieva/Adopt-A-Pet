@@ -1,0 +1,19 @@
+.search__options{
+  display: flex;
+  justify-content: center;
+}
+.search__options a{
+    transition: 0.2s ease-in-out;
+    margin: 20px 10px;
+    color: rgb(120, 108, 194);
+    border: 1px solid rgb(120, 108, 194);;
+    padding: 10px 15px;
+}
+.search__options a:hover{
+    margin: 20px 10px;
+    color: white;
+    border: 1px solid rgb(120, 108, 194);;
+    padding: 10px 15px;
+    background-color:  rgb(120, 108, 194);
+   transition: 0.2s ease-in-out;
+}
