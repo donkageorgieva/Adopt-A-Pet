@@ -1,15 +1,20 @@
-import logo from './logo.svg';
-import './App.scss';
-import Header from './components/Header/Header'
-import CatInfo from './containers/CatInfo/CatInfo';
 
+import React from 'react';
+
+import Layout from './components/Layout/Layout';
+
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder'
 
 
 function App() {
   return (
-    <div className="App">
-     <Header/>
-     <CatInfo />
+    <div>
+      <Layout>
+
+<BurgerBuilder>
+
+</BurgerBuilder>
+      </Layout>
  
     </div>
   );
