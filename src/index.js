@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+axios.defaults.baseURL = "https://api.thecatapi.com/v1";
 
 ReactDOM.render(
   <React.StrictMode>
