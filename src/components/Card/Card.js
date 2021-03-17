@@ -17,7 +17,7 @@ if (props.cat){
 return (
 
 
-    <Card>
+    <Card className ="mt-3">
         <Card.Img variant="top" />
         <Card.Body>
 

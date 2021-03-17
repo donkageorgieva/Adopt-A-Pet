@@ -5,7 +5,9 @@ $body-bg: #f5f5f5;
 .form-control {
     width: 25% !important;
 }
-
+.card{
+    width: 50% !important;
+}
 $navbar-light-hover-color: darken($color: $primary, $amount: 60%);
 
 
