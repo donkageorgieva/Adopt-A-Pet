@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import styles from './Header.module.scss';
-import HeadContent from '../HeadInfo/CatInfo'
+import HeroContent from '../HeroInfo/CatInfo'
 
 const header = (props) => {
     return(
@@ -32,7 +32,7 @@ const header = (props) => {
         
             </Container>
         </Navbar>
-     <HeadContent />
+     <HeroContent />
      
             </header>
     )

@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+.CatInfo{
+    height: 600px;
+
+}
+.HeroImage{
+    background-image: url('../../utilities/images/heroImage.svg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
