@@ -5,22 +5,9 @@ $info: #8b66e7;
 $success: #b2e7b9;
 $danger: #e7b2b2;
 
-$navbar-light-hover-color: darken($color: $primary, $amount: 60%);
-
-
-
-
-
-
-
-
-
-
-
-
-
+$navbar-light-hover-color: darken(
+  $color: $primary,
+  $amount: 60%,
+);
 
 @import "~bootstrap/scss/bootstrap";
-
-
-
