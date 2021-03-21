@@ -14,7 +14,7 @@ class SearchCats extends Component{
     componentDidMount(){
         axios.get('/breeds').then(response=>{
             this.setState({allBreeds: response.data});
-            console.log(response);
+           
          
         })
     }
