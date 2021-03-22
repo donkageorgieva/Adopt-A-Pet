@@ -4,6 +4,7 @@ import styles from "./SearchCats.module.scss";
 import axios from "axios";
 import ChosenBreed from "../ChosenBreed/ChosenBreed";
 
+
 class SearchCats extends Component {
   state = {
     allBreeds: [],
@@ -12,6 +13,7 @@ class SearchCats extends Component {
   componentDidMount() {
     axios.get("/breeds").then((response) => {
       this.setState({ allBreeds: response.data });
+      
     });
   }
   selected = (selectedBreed) => {
@@ -30,10 +32,10 @@ class SearchCats extends Component {
       );
     });
     return (
-      <main className={styles.MainContent}>
-        <section>
+      <main className={[styles.MainContent, "search-cats"].join(' ')} >
+        <section >
           <Container>
-            <h2 className="mb-3">Select any Breed</h2>
+            <h2 className="mb-3" >Select any Breed</h2>
             <Form.Control
               as="select"
               onChange={(e) => {

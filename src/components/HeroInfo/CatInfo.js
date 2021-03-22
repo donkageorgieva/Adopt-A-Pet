@@ -1,15 +1,28 @@
 import React from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import styles from "./CatInfo.module.scss";
+import {scroller} from 'react-scroll';
+
 
 const catInfo = (props) => {
+  const smoothScroll = (href) => {
+    
+
+      scroller.scrollTo(href, {
+        smooth: true,
+        offset: -65,
+        duration: 500,
+      })
+      
+      
+  }
   return (
     <section
-      className={[styles.CatInfo, "d-flex align-items-center"].join(" ")}
+      className={[styles.CatInfo, "d-flex align-items-center home"].join(" ")} 
     >
-      <Container>
-        <Row sm={1} xs={1} md={2}>
-          <Col>
+      <Container className={styles.HeroContainer}>
+        <Row>
+          <Col sm className={styles.HeroTextContainer}>
             <h1> Cats?</h1>
             <h2>
               Find out information about any cat breed in just a single click!{" "}
@@ -21,21 +34,21 @@ const catInfo = (props) => {
             </p>
             <Col>
               <Row>
-                <form action="/" className="mr-3">
-                  <Button variant="primary" type="submit">
-                    Start now
+             
+                  <Button variant="primary" onClick={()=>{smoothScroll("search-cats")}} className="mr-3">
+                   Start Now
                   </Button>
-                </form>
-                <form action="/" className="ml-1">
-                  <Button variant="outline-info" type="submit">
-                    Learn more
+           
+              
+                  <Button variant="outline-info"  onClick={()=>{smoothScroll("contact")}}>
+              Contacts
                   </Button>
-                </form>
+             
               </Row>
             </Col>
           </Col>
 
-          <Col>
+          <Col sm className={styles.HeroImageContainer}>
             <div className={styles.HeroImage}></div>
           </Col>
         </Row>

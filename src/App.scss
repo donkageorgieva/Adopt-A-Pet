@@ -9,5 +9,26 @@ $navbar-light-hover-color: darken(
   $color: $primary,
   $amount: 60%,
 );
+footer{
+ 
+  background-color: $secondary;
+  color: #ffff;
+}
+.navbar{
+  opacity: 30%;
+  transition: 0.3s ease-in;
+  &:hover{
+    transition: 0.3s ease-in;
+    opacity: 1;
+  }
+}
 
 @import "~bootstrap/scss/bootstrap";
+@include media-breakpoint-down(lg) {
+   
+.navbar{
+  opacity: 1;
+}
+}
+
+

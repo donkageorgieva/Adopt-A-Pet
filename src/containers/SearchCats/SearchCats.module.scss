@@ -1,5 +1,12 @@
 @import "../../App.scss";
 
 .MainContent {
-  height: 100vh;
+  height: 1100px;
+
+}
+@include media-breakpoint-down(lg) {
+  .MainContent {
+    height: 1400px;
+
+  }
 }
